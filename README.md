@@ -1,6 +1,6 @@
 # 🦇 Obsidian Planner
 
-App para desktop com (Electron + SQLite) para **Hábitos, Tarefas e Notas** — leve, offline e com tema escuro.
+App para desktop com (Electron + SQLite) para **Hábitos, Tarefas e Notas** leve, offline e com tema escuro.
 
 <p align="center">
 
@@ -16,7 +16,7 @@ App para desktop com (Electron + SQLite) para **Hábitos, Tarefas e Notas** — 
 - **Notas rápidas**
 - Banco local **SQLite** (offline, via `better-sqlite3`)
 - **Instalador .exe** para Windows (electron-builder)
-- Ícone customizado (morceguinho 🦇)
+- Ícone customizado
 
 ---
 
