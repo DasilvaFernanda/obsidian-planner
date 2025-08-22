@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline';" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Obsidian Planner</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="panel glass">
+    <header>
+      <h1>🦇 Obsidian Planner</h1>
+      <p>Hábitos • Tarefas • Notas</p>
+    </header>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Hábitos</h2>
+        <form id="habitForm">
+          <input id="habitName" placeholder="Novo hábito..." required />
+          <input id="habitColor" type="color" value="#a855f7" title="Cor" />
+          <button class="btn">Adicionar</button>
+        </form>
+        <ul id="habitList"></ul>
+
+        <div class="mt">
+          <h3>Marcar hoje</h3>
+          <select id="habitSelect"></select>
+          <button id="markToday" class="btn">Marcar ✅</button>
+          <ul id="todayEntries"></ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Tarefas</h2>
+        <form id="taskForm">
+          <input id="taskTitle" placeholder="Nova tarefa..." required />
+          <button class="btn">Adicionar</button>
+        </form>
+        <ul id="taskList"></ul>
+      </div>
+
+      <div class="card">
+        <h2>Notas Rápidas</h2>
+        <form id="noteForm">
+          <textarea id="noteText" rows="5" placeholder="Escreva algo..."></textarea>
+          <button class="btn">Salvar</button>
+        </form>
+        <ul id="noteList"></ul>
+      </div>
+    </section>
+  </main>
+
+  <div class="overlay"></div>
+  <script src="./renderer.js"></script>
+</body>
+</html>

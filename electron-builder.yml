@@ -1,0 +1,13 @@
+appId: com.obsidian.planner
+productName: Obsidian Planner
+
+directories:
+  output: dist
+
+files:
+  - "**/*"           # aqui eu fiz a inclusão da pasta assets no pacote
+
+win:
+  icon: assets/obsidian_planner_icon.ico  
+  target:
+    - nsis
